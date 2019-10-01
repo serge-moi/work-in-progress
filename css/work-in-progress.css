@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+
+
+
+
+/*////////////////////////////// BODY //////////////////////////////*/
+
+
+
+.container{
+    background: conic-gradient(#311c04, #06374c);
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/*////////////////////////////// HEADER //////////////////////////////*/
+
+
+
+.tete{
+    background: #f7b204;
+    background: -moz-linear-gradient(-45deg,  #f7b204 0%, #8f0222 44%, #00e5c3 100%);
+    background: -webkit-linear-gradient(-45deg,  #f7b204 0%,#8f0222 44%,#00e5c3 100%);
+    background: linear-gradient(135deg,  #f7b204 0%,#8f0222 44%,#00e5c3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7b204', endColorstr='#00e5c3',GradientType=1 );
+}
+
+.current{
+    text-align: center;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 36px;
+    margin: 2% 0;
+    padding: 2%;
+    text-shadow: 1px 1px 9px black;
+    color: antiquewhite;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.current::before{
+    content: "- "
+}
+
+.current::after{
+    content: " -"
+}
+
+#peur{
+    position: absolute;
+    width: 3.3%;
+    margin-top: -87px;
+    margin-left: -31px;
+    animation: bounce 0.7s ease infinite;
+}
+
+@keyframes bounce{
+    from {top: 106px;}
+    50%  {top: 86px;}
+    to   {top: 106px;}
+}
+
+
+
+/*////////////////////////////// MAIN //////////////////////////////*/
+
+
+
+.corps{
+    border: solid black;
+    width: 750px;
+    margin: auto;
+    box-shadow: 0px 0px 8px;
+    background: repeating-radial-gradient(#4e3315, #3f87a6 50px);
+}
+
+.art1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.face{
+    width: 700px;
+}
+
+#luffy{
+    width: 90%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 14px whitesmoke;
+    border: 8px solid #5d0f0f;
+}
+
+#facecap{
+    font-family: 'Concert One', cursive;
+    font-size: 25px;
+    padding: 4% 0 2% 0;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.mark{
+    box-shadow: 1px 1px 10px;
+    padding: 1%;
+    border: 2px solid;
+    border-radius: 4%;
+}
+
+#video{
+    border: 2px solid;
+    box-shadow: 2px 2px 11px;
+}
+
+
+#nav1{
+    padding: 2%;
+    margin:2%;
+}
+
+#info{
+    border: 4px ridge #353506;
+    padding: 0.8% 2%;
+    border-radius: 8%;
+    text-decoration: none;
+    background-color: darkmagenta;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px black;
+    font-weight: bold;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+#info:hover{
+    color: #ff8d00;
+    background-color: #000000;
+    border-color: #ff8d00;
+}
+
+#info:focus{
+    color: black;
+    text-shadow: none;
+    border: none;
+    border-radius: 0%;
+    background-color: white;
+    text-decoration: line-through;
+}
+
+
+
+/*////////////////////////////// FOOTER //////////////////////////////////*/
+
+
+
+#nav2{
+    padding-top: 2%;
+}
+
+.fab{
+    padding:0 0.5%;
+    color: black;
+    text-shadow: 1px 1px 10px white;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 10%;
+}
+
+.fab:hover{
+    color: #8f0222;
+}
+
+.fa-facebook-f{
+    padding: 0.5% 0.8%;
+}
+
+.fa-twitter{
+    padding: 0.5% 0.7%;
+}
+
+.fa-google-plus-g{
+    padding: 0.5% 0.5%;
+}
+
+#pfoot{
+    font-family: 'Chewy', cursive;
+    box-shadow: 1px 1px 10px white;
+    padding: 0.5%;
+    text-shadow: 1px 1px 5px white;
+    color: white;
+}
